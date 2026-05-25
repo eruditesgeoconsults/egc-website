@@ -18,7 +18,7 @@ export default function HomePage() {
       >
         <h1
           style={{
-            fontSize: "56px",
+            fontSize: "55px",
             fontWeight: "bold",
             lineHeight: "1.1",
             marginBottom: "20px",
@@ -30,9 +30,9 @@ export default function HomePage() {
 
         <p
           style={{
-            fontSize: "22px",
+            fontSize: "20px",
+            color: "#d1d5db",
             marginBottom: "20px",
-            color: "#d0d0d0",
           }}
         >
           Professional Surveying & Geospatial Solutions
@@ -40,10 +40,10 @@ export default function HomePage() {
 
         <p
           style={{
-            maxWidth: "700px",
+            fontSize: "17px",
             lineHeight: "1.8",
-            color: "#cccccc",
-            marginBottom: "40px",
+            color: "#cbd5e1",
+            maxWidth: "700px",
           }}
         >
           Innovation, precision, accuracy and excellence delivering
@@ -53,16 +53,17 @@ export default function HomePage() {
         <div
           style={{
             display: "flex",
-            gap: "16px",
+            gap: "15px",
+            marginTop: "35px",
             flexWrap: "wrap",
           }}
         >
           <a
-            href="#contact"
+            href="https://wa.me/2347038622672"
             style={{
               background: "#0f5132",
               color: "white",
-              padding: "14px 28px",
+              padding: "15px 28px",
               borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
@@ -74,9 +75,9 @@ export default function HomePage() {
           <a
             href="#about"
             style={{
-              border: "1px solid #ffffff55",
+              border: "1px solid #0f5132",
               color: "white",
-              padding: "14px 28px",
+              padding: "15px 28px",
               borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
@@ -87,62 +88,133 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* ABOUT SECTION */}
       <section
         id="about"
         style={{
-          padding: "60px 20px",
-          background: "#052d20",
+          padding: "70px 20px",
+          background: "#052e22",
         }}
       >
         <div
           style={{
-            maxWidth: "1000px",
+            maxWidth: "1200px",
             margin: "0 auto",
           }}
         >
           <h2
             style={{
-              fontSize: "42px",
+              fontSize: "40px",
               marginBottom: "20px",
             }}
           >
-            Founded on precision. Built on trust.
+            About Erudites GEOConsults
           </h2>
 
           <p
             style={{
-              lineHeight: "1.9",
-              color: "#dddddd",
               fontSize: "18px",
+              lineHeight: "1.9",
+              color: "#d1d5db",
+              maxWidth: "900px",
             }}
           >
-            Erudites GEOConsults provides professional land surveying,
-            engineering surveying, GIS mapping, drone mapping, property
-            documentation, geospatial analysis and consultancy services with
-            accuracy and integrity.
+            Erudites GEOConsults is a professional geospatial and surveying
+            company focused on delivering accurate land surveying, engineering
+            surveying, GIS mapping, topographic surveys, property documentation,
+            and construction layout solutions with modern technology and
+            industry-standard precision.
           </p>
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* SERVICES */}
       <section
-        id="contact"
         style={{
           padding: "80px 20px",
         }}
       >
         <div
           style={{
-            maxWidth: "1000px",
+            maxWidth: "1200px",
             margin: "0 auto",
           }}
         >
           <h2
             style={{
-              fontSize: "52px",
-              marginBottom: "30px",
-              lineHeight: "1.2",
+              fontSize: "40px",
+              marginBottom: "40px",
+            }}
+          >
+            Our Services
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+              gap: "20px",
+            }}
+          >
+            {[
+              "Land Surveying",
+              "Engineering Survey",
+              "Topographic Mapping",
+              "GIS & Geospatial Analysis",
+              "Construction Setting Out",
+              "Property Documentation",
+              "Drone Mapping",
+              "Real Estate Consultancy",
+            ].map((service) => (
+              <div
+                key={service}
+                style={{
+                  background: "#0a3d2d",
+                  padding: "25px",
+                  borderRadius: "15px",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "22px",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {service}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#d1d5db",
+                    lineHeight: "1.7",
+                  }}
+                >
+                  Professional and accurate service delivery using modern
+                  geospatial technologies and best practices.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section
+        style={{
+          padding: "80px 20px",
+          background: "#052e22",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
+        >
+          <h2
+            style={{
+              fontSize: "45px",
+              marginBottom: "25px",
             }}
           >
             Ready to start your next project?
@@ -150,10 +222,10 @@ export default function HomePage() {
 
           <p
             style={{
-              fontSize: "20px",
+              fontSize: "18px",
               lineHeight: "1.8",
-              color: "#d0d0d0",
-              marginBottom: "40px",
+              color: "#d1d5db",
+              maxWidth: "800px",
             }}
           >
             Connect with our team of geospatial experts to discuss your
@@ -163,13 +235,14 @@ export default function HomePage() {
 
           <div
             style={{
+              marginTop: "40px",
               lineHeight: "2",
               fontSize: "20px",
             }}
           >
             <p>
-              <strong>Head Office:</strong> 20 UNIZIK Lock-Up Shops,
-              Ifite Awka, Awka-Ifite, Anambra, Nigeria
+              <strong>Head Office:</strong> 20 UNIZIK Lock-Up Shops, Ifite
+              Awka, Awka-Iflite, Anambra, Nigeria
             </p>
 
             <p>
@@ -181,67 +254,42 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* SOCIAL MEDIA */}
+          {/* SOCIAL BUTTONS */}
           <div
             style={{
               display: "flex",
-              gap: "15px",
+              gap: "20px",
               flexWrap: "wrap",
               marginTop: "40px",
             }}
           >
-            <a
-              href="https://wa.me/2347038622672"
-              target="_blank"
-              style={buttonStyle}
-            >
-              WhatsApp
-            </a>
-
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              style={buttonStyle}
-            >
-              Facebook
-            </a>
-
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              style={buttonStyle}
-            >
-              Instagram
-            </a>
-
-            <a
-              href="https://tiktok.com"
-              target="_blank"
-              style={buttonStyle}
-            >
-              TikTok
-            </a>
-
-            <a
-              href="https://t.me/Emmadeseeker"
-              target="_blank"
-              style={buttonStyle}
-            >
-              Telegram
-            </a>
+            {[
+              "WhatsApp",
+              "Facebook",
+              "Instagram",
+              "TikTok",
+              "Telegram",
+            ].map((social) => (
+              <a
+                key={social}
+                href="#"
+                style={{
+                  background: "#0f5132",
+                  color: "white",
+                  padding: "18px 30px",
+                  borderRadius: "12px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  minWidth: "140px",
+                  textAlign: "center",
+                }}
+              >
+                {social}
+              </a>
+            ))}
           </div>
         </div>
       </section>
     </main>
   );
 }
-
-const buttonStyle = {
-  background: "#0f5132",
-  color: "white",
-  padding: "14px 24px",
-  borderRadius: "10px",
-  textDecoration: "none",
-  fontWeight: "bold",
-  display: "inline-block",
-};
