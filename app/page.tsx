@@ -31,15 +31,14 @@ export default function HomePage() {
   }}
 >
   <img
-    src="/egc-logo.png"
-    alt="EGC Logo"
-    style={{
-      width: "60px",
-      height: "60px",
-      objectFit: "contain",
-    }}
-  />
-
+  src="/file_00000000a318720aac3fde87252ef7f3_1778973965455.png"
+  alt="EGC Logo"
+  style={{
+    width: "60px",
+    height: "60px",
+    objectFit: "contain",
+  }}
+/>
   <div>
     <h2
       style={{
