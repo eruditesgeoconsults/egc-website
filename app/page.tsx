@@ -34,14 +34,32 @@ export default function HomePage() {
       gap: "15px",
     }}
   >
-    <h2
-      style={{
-        margin: 0,
-        fontSize: "24px",
-      }}
-    >
-      EGC
-    </h2>
+    <div
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  }}
+>
+  <img
+    src="https://i.imgur.com/8Km9tLL.png"
+    alt="EGC Logo"
+    style={{
+      width: "45px",
+      height: "45px",
+      borderRadius: "50%",
+    }}
+  />
+
+  <h2
+    style={{
+      margin: 0,
+      fontSize: "24px",
+    }}
+  >
+    EGC
+  </h2>
+</div>
 
     <nav
       style={{
