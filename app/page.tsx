@@ -23,42 +23,44 @@ export default function HomePage() {
     zIndex: 1000,
   }}
 >
-  <div
-    style={{
-      maxWidth: "1200px",
-      margin: "0 auto",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      flexWrap: "wrap",
-      gap: "15px",
-    }}
-  >
-    <div
+<div
   style={{
     display: "flex",
     alignItems: "center",
-    gap: "10px",
+    gap: "12px",
   }}
 >
   <img
-    src="https://i.imgur.com/8Km9tLL.png"
+    src="/egc-logo.png"
     alt="EGC Logo"
     style={{
-      width: "45px",
-      height: "45px",
-      borderRadius: "50%",
+      width: "60px",
+      height: "60px",
+      objectFit: "contain",
     }}
   />
 
-  <h2
-    style={{
-      margin: 0,
-      fontSize: "24px",
-    }}
-  >
-    EGC
-  </h2>
+  <div>
+    <h2
+      style={{
+        margin: 0,
+        fontSize: "24px",
+        fontWeight: "bold",
+      }}
+    >
+      EGC
+    </h2>
+
+    <p
+      style={{
+        margin: 0,
+        fontSize: "12px",
+        color: "#cbd5e1",
+      }}
+    >
+      Erudites GeoConsults
+    </p>
+  </div>
 </div>
 
     <nav
