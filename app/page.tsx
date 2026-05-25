@@ -18,33 +18,42 @@ export default function HomePage() {
       >
         <h1
           style={{
-            fontSize: "4rem",
+            fontSize: "56px",
             fontWeight: "bold",
+            lineHeight: "1.1",
             marginBottom: "20px",
           }}
         >
-          Erudites GEOConsults
+          Erudites <br />
+          GEOConsults
         </h1>
 
         <p
           style={{
-            fontSize: "1.3rem",
-            lineHeight: "1.8",
+            fontSize: "22px",
+            marginBottom: "20px",
+            color: "#d0d0d0",
+          }}
+        >
+          Professional Surveying & Geospatial Solutions
+        </p>
+
+        <p
+          style={{
             maxWidth: "700px",
-            color: "#d1d5db",
+            lineHeight: "1.8",
+            color: "#cccccc",
+            marginBottom: "40px",
           }}
         >
-          Professional Surveying & Geospatial Solutions.
-          <br />
-          Mapping into reality with precision, innovation,
-          and excellence across Nigeria and West Africa.
+          Innovation, precision, accuracy and excellence delivering
+          authoritative geospatial solutions across Nigeria and West Africa.
         </p>
 
         <div
           style={{
-            marginTop: "40px",
             display: "flex",
-            gap: "20px",
+            gap: "16px",
             flexWrap: "wrap",
           }}
         >
@@ -52,9 +61,9 @@ export default function HomePage() {
             href="#contact"
             style={{
               background: "#0f5132",
-              padding: "16px 28px",
-              borderRadius: "10px",
               color: "white",
+              padding: "14px 28px",
+              borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
             }}
@@ -65,10 +74,10 @@ export default function HomePage() {
           <a
             href="#about"
             style={{
-              border: "1px solid white",
-              padding: "16px 28px",
-              borderRadius: "10px",
+              border: "1px solid #ffffff55",
               color: "white",
+              padding: "14px 28px",
+              borderRadius: "10px",
               textDecoration: "none",
               fontWeight: "bold",
             }}
@@ -78,23 +87,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ABOUT SECTION */}
+      {/* ABOUT */}
       <section
         id="about"
         style={{
-          padding: "80px 20px",
-          background: "#063321",
+          padding: "60px 20px",
+          background: "#052d20",
         }}
       >
         <div
           style={{
-            maxWidth: "1100px",
+            maxWidth: "1000px",
             margin: "0 auto",
           }}
         >
           <h2
             style={{
-              fontSize: "3rem",
+              fontSize: "42px",
               marginBottom: "20px",
             }}
           >
@@ -103,90 +112,37 @@ export default function HomePage() {
 
           <p
             style={{
-              fontSize: "1.2rem",
-              lineHeight: "2",
-              color: "#d1d5db",
+              lineHeight: "1.9",
+              color: "#dddddd",
+              fontSize: "18px",
             }}
           >
-            Erudites GEOConsults delivers professional
-            land surveying, GIS mapping, topographic
-            surveys, engineering surveys, construction
-            support, and geospatial consultancy services.
+            Erudites GEOConsults provides professional land surveying,
+            engineering surveying, GIS mapping, drone mapping, property
+            documentation, geospatial analysis and consultancy services with
+            accuracy and integrity.
           </p>
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
-      <section
-        style={{
-          padding: "80px 20px",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "3rem",
-              marginBottom: "40px",
-            }}
-          >
-            Our Services
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: "20px",
-            }}
-          >
-            {[
-              "Land Surveying",
-              "GIS & Mapping",
-              "Topographic Survey",
-              "Engineering Survey",
-              "Construction Support",
-              "Road & Building Projects",
-              "Property Documentation",
-              "Geospatial Consultancy",
-            ].map((service) => (
-              <div
-                key={service}
-                style={{
-                  background: "#0a3d2a",
-                  padding: "30px",
-                  borderRadius: "14px",
-                }}
-              >
-                <h3>{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT SECTION */}
+      {/* CONTACT */}
       <section
         id="contact"
         style={{
           padding: "80px 20px",
-          background: "#063321",
         }}
       >
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: "1000px",
             margin: "0 auto",
           }}
         >
           <h2
             style={{
-              fontSize: "3rem",
-              marginBottom: "20px",
+              fontSize: "52px",
+              marginBottom: "30px",
+              lineHeight: "1.2",
             }}
           >
             Ready to start your next project?
@@ -194,21 +150,21 @@ export default function HomePage() {
 
           <p
             style={{
-              fontSize: "1.2rem",
-              lineHeight: "2",
-              color: "#d1d5db",
+              fontSize: "20px",
+              lineHeight: "1.8",
+              color: "#d0d0d0",
+              marginBottom: "40px",
             }}
           >
-            Connect with our team of geospatial experts
-            to discuss your requirements, request a survey,
-            or get a comprehensive project quote.
+            Connect with our team of geospatial experts to discuss your
+            requirements, request a survey, or get a comprehensive project
+            quote.
           </p>
 
           <div
             style={{
-              marginTop: "40px",
               lineHeight: "2",
-              fontSize: "1.1rem",
+              fontSize: "20px",
             }}
           >
             <p>
@@ -217,8 +173,7 @@ export default function HomePage() {
             </p>
 
             <p>
-              <strong>Phone:</strong> +234 703 862 2672 |
-              +234 808 390 5789
+              <strong>Phone:</strong> +234 703 862 2672 | +234 808 390 5789
             </p>
 
             <p>
@@ -226,312 +181,43 @@ export default function HomePage() {
             </p>
           </div>
 
-          <a
-            href="https://wa.me/2347038622672"
-            target="_blank"
-            style={{
-              display: "inline-block",
-              marginTop: "30px",
-              background: "#0f5132",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "10px",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Chat on WhatsApp
-          </a>
-
+          {/* SOCIAL MEDIA */}
           <div
             style={{
               display: "flex",
-              gap: "16px",
-              marginTop: "30px",
+              gap: "15px",
               flexWrap: "wrap",
-            }}
-          >
-            <a
-              href="https://www.facebook.com/share/1KfQnjg6E6/"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Facebook
-            </a>
-
-            <a
-              href="https://www.instagram.com/dieke.emmanuel.96"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Instagram
-            </a>
-
-            <a
-              href="https://www.tiktok.com/@tech.surveyor"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              TikTok
-            </a>
-
-            <a
-              href="https://t.me/Emmadeseeker"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Telegram
-            </a>
-
-            <a
-              href="https://www.snapchat.com/add/diekeemmanuel"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Snapchat
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
-              }          Professional Surveying & Geospatial Solutions.
-          <br />
-          Mapping into reality with precision, innovation,
-          and excellence across Nigeria and West Africa.
-        </p>
-
-        <div
-          style={{
-            marginTop: "40px",
-            display: "flex",
-            gap: "20px",
-            flexWrap: "wrap",
-          }}
-        >
-          <a
-            href="#contact"
-            style={{
-              background: "#0f5132",
-              padding: "16px 28px",
-              borderRadius: "10px",
-              color: "white",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Contact Us
-          </a>
-
-          <a
-            href="#about"
-            style={{
-              border: "1px solid white",
-              padding: "16px 28px",
-              borderRadius: "10px",
-              color: "white",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            About Us
-          </a>
-        </div>
-      </section>
-
-      {/* ABOUT SECTION */}
-      <section
-        id="about"
-        style={{
-          padding: "80px 20px",
-          background: "#063321",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "3rem",
-              marginBottom: "20px",
-            }}
-          >
-            Founded on precision. Built on trust.
-          </h2>
-
-          <p
-            style={{
-              fontSize: "1.2rem",
-              lineHeight: "2",
-              color: "#d1d5db",
-            }}
-          >
-            Erudites GEOConsults delivers professional
-            land surveying, GIS mapping, topographic
-            surveys, engineering surveys, construction
-            support, and geospatial consultancy services.
-          </p>
-        </div>
-      </section>
-
-      {/* SERVICES SECTION */}
-      <section
-        style={{
-          padding: "80px 20px",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1100px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "3rem",
-              marginBottom: "40px",
-            }}
-          >
-            Our Services
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-              gap: "20px",
-            }}
-          >
-            {[
-              "Land Surveying",
-              "GIS & Mapping",
-              "Topographic Survey",
-              "Engineering Survey",
-              "Construction Support",
-              "Road & Building Projects",
-              "Property Documentation",
-              "Geospatial Consultancy",
-            ].map((service) => (
-              <div
-                key={service}
-                style={{
-                  background: "#0a3d2a",
-                  padding: "30px",
-                  borderRadius: "14px",
-                }}
-              >
-                <h3>{service}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CONTACT SECTION */}
-      <section
-        id="contact"
-        style={{
-          padding: "80px 20px",
-          background: "#063321",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <h2
-            style={{
-              fontSize: "3rem",
-              marginBottom: "20px",
-            }}
-          >
-            Ready to start your next project?
-          </h2>
-
-          <p
-            style={{
-              fontSize: "1.2rem",
-              lineHeight: "2",
-              color: "#d1d5db",
-            }}
-          >
-            Connect with our team of geospatial experts
-            to discuss your requirements, request a survey,
-            or get a comprehensive project quote.
-          </p>
-
-          <div
-            style={{
               marginTop: "40px",
-              lineHeight: "2",
-              fontSize: "1.1rem",
-            }}
-          >
-            <p>
-              <strong>Head Office:</strong> 20 UNIZIK Lock-Up Shops,
-              Ifite Awka, Awka-Ifite, Anambra, Nigeria
-            </p>
-
-            <p>
-              <strong>Phone:</strong> +234 703 862 2672 |
-              +234 808 390 5789
-            </p>
-
-            <p>
-              <strong>Email:</strong> admin@eruditesgeoconsults.com
-            </p>
-          </div>
-
-          <a
-            href="https://wa.me/2347038622672"
-            target="_blank"
-            style={{
-              display: "inline-block",
-              marginTop: "30px",
-              background: "#0f5132",
-              color: "white",
-              padding: "16px 28px",
-              borderRadius: "10px",
-              textDecoration: "none",
-              fontWeight: "bold",
-            }}
-          >
-            Chat on WhatsApp
-          </a>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "16px",
-              marginTop: "30px",
-              flexWrap: "wrap",
             }}
           >
             <a
-              href="https://www.facebook.com/share/1KfQnjg6E6/"
+              href="https://wa.me/2347038622672"
               target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
+              style={buttonStyle}
+            >
+              WhatsApp
+            </a>
+
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              style={buttonStyle}
             >
               Facebook
             </a>
 
             <a
-              href="https://www.instagram.com/dieke.emmanuel.96"
+              href="https://instagram.com"
               target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
+              style={buttonStyle}
             >
               Instagram
             </a>
 
             <a
-              href="https://www.tiktok.com/@tech.surveyor"
+              href="https://tiktok.com"
               target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
+              style={buttonStyle}
             >
               TikTok
             </a>
@@ -539,21 +225,23 @@ export default function HomePage() {
             <a
               href="https://t.me/Emmadeseeker"
               target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
+              style={buttonStyle}
             >
               Telegram
-            </a>
-
-            <a
-              href="https://www.snapchat.com/add/diekeemmanuel"
-              target="_blank"
-              style={{ color: "white", textDecoration: "none" }}
-            >
-              Snapchat
             </a>
           </div>
         </div>
       </section>
     </main>
   );
-                }
+}
+
+const buttonStyle = {
+  background: "#0f5132",
+  color: "white",
+  padding: "14px 24px",
+  borderRadius: "10px",
+  textDecoration: "none",
+  fontWeight: "bold",
+  display: "inline-block",
+};
