@@ -1,3 +1,8 @@
+const navLink = {
+  color: "white",
+  textDecoration: "none",
+  fontWeight: "bold",
+};
 export default function HomePage() {
   return (
     <main
@@ -7,7 +12,62 @@ export default function HomePage() {
         minHeight: "100vh",
         fontFamily: "Arial, sans-serif",
       }}
+    >{/* NAVBAR */}
+<header
+  style={{
+    padding: "20px",
+    borderBottom: "1px solid #0f5132",
+    position: "sticky",
+    top: 0,
+    background: "#021f16",
+    zIndex: 1000,
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: "15px",
+    }}
+  >
+    <h2
+      style={{
+        margin: 0,
+        fontSize: "24px",
+      }}
     >
+      EGC
+    </h2>
+
+    <nav
+      style={{
+        display: "flex",
+        gap: "20px",
+        flexWrap: "wrap",
+      }}
+    >
+      <a href="#" style={navLink}>
+        Home
+      </a>
+
+      <a href="#about" style={navLink}>
+        About
+      </a>
+
+      <a href="#services" style={navLink}>
+        Services
+      </a>
+
+      <a href="#contact" style={navLink}>
+        Contact
+      </a>
+    </nav>
+  </div>
+</header>
       {/* HERO SECTION */}
       <section
         style={{
