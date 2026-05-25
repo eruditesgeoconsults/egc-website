@@ -303,56 +303,8 @@ export default function HomePage() {
             }}
           >
             Chat on WhatsApp
-          <div
-  style={{
-    display: "flex",
-    gap: "16px",
-    marginTop: "30px",
-    flexWrap: "wrap",
-  }}
->
-  <a
-    href="https://www.facebook.com/share/1KfQnjg6E6/"
-    target="_blank"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    Facebook
-  </a>
-
-  <a
-    href="https://www.instagram.com/dieke.emmanuel.96"
-    target="_blank"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    Instagram
-  </a>
-
-  <a
-    href="https://www.tiktok.com/@tech.surveyor"
-    target="_blank"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    TikTok
-  </a>
-
-  <a
-    href="https://t.me/Emmadeseeker"
-    target="_blank"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    Telegram
-  </a>
-
-  <a
-    href="https://www.snapchat.com/add/diekeemmanuel"
-    target="_blank"
-    style={{ color: "white", textDecoration: "none" }}
-  >
-    Snapchat
-  </a>
-</div>
-        </div>
-      </section>
+          </a>
+  
     </main>
   );
       }
